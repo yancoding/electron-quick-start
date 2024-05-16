@@ -5,8 +5,8 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 1000,
     icon: path.join(__dirname, 'icons/512x512.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
@@ -14,7 +14,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.webContents.loadURL('https://www.kaoshixing.com/login/account/login/203532')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

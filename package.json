@@ -1,16 +1,16 @@
 {
-  "name": "electron-quick-start",
+  "name": "ksx-kylin-desktop",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "考试星麒麟桌面客户端",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "builder": "electron-builder"
   },
   "build": {
-    "productName": "electron-quick-start",
+    "productName": "考试星系统",
     "asar": "false",
-    "appId": "electron-quick-start",
+    "appId": "ksx-kylin-desktop",
     "directories": {
       "output": "dist"
     },
@@ -37,7 +37,6 @@
     "name": "kaoshixing",
     "email": "developer@kaoshixing.com"
   },
-  "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^10.1.5"
   }
