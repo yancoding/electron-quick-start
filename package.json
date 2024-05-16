@@ -4,7 +4,26 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "builder": "electron-builder"
+  },
+  "build": {
+    "productName": "electron-quick-start",
+    "asar": "false",
+    "appId": "electron-quick-start",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "icon": "icons",
+      "category": "Education",
+      "target": {
+        "target": "deb",
+        "arch": [
+          "arm64"
+        ]
+      }
+    }
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -14,7 +33,10 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": {
+    "name": "kaoshixing",
+    "email": "developer@kaoshixing.com"
+  },
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^10.1.5"
